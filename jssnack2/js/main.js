@@ -9,9 +9,9 @@ const wordTwo = prompt('type a second word');
 
 
 if(wordOne.length > wordTwo.length) {
-    console.log(`${wordOne} is longer than ${wordTwo}`);
+    console.log(`the shortest word is ${wordTwo}`);
 }else if (wordTwo.length > wordOne.length) {
-    console.log(`${wordTwo} is longer than ${wordOne}`);
+    console.log(`the shortest word is ${wordOne}`);
 }else {
     console.log(`the words have the same length`);
 }
