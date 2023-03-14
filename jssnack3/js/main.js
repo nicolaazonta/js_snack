@@ -4,18 +4,17 @@ Il programma stampa la somma di tutti i numeri inseriti. */
 
 
 
-let numbers 
-let sum
+let numberEl 
+let sum = 0;
 
 for (let i = 0; i < 10; i++) {
-    numbers[i] = prompt(`insert number ${i}`);
-    console.log(numbers[i]);    
+    numberEl = Number(prompt('digita un numero'));
+    sum = sum + numberEl;
+    //console.log('ciao' + numberEl);
+    //console.log(sum);
 }
 
-for (let i = 0; i < 10; i++) {
-   // numbers [i] = Number(prompt('insert number ${i}'))
-    sum = sum + numbers [i];
-}
+
 
 console.log(`the sum of all ten number is ${sum}`);
 
