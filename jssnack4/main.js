@@ -12,17 +12,30 @@ let guests =[
 ]
 
 const userGuest = prompt('please insert your name');
-
+let result 
 for (let i = 0; i < guests.length; i++) {
     const thisGuest = guests[i];
 
 
     //console.log(thisGuest);
-    if (thisGuest === userGuest) {
+  /*   if (thisGuest === userGuest) {
         console.log('sei in lista');
     } else if (thisGuest != userGuest){
         console.log('non puoi entrare');
+    } */     
+
+
+    if (thisGuest === userGuest) {
+        result = true;
     }     
 }
 
+
+if(result == true){
+    console.log('sei in lista');
+    
+}
+else {    console.log('non puoi entrare');
+
+}
 
